@@ -1,0 +1,37 @@
+{
+  "name": "di_todo_client",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "author": "henshaw rowland",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start": "ts-node src/index.ts",
+    "test": "export NODE_ENV=test && jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.10",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.4.0",
+    "jest-extended": "^1.2.0",
+    "jest-fetch-mock": "^3.0.3",
+    "jest-mock-axios": "^4.4.1",
+    "prettier": "^2.5.0",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "inversify": "^6.0.1",
+    "reflect-metadata": "^0.1.13"
+  }
+}
